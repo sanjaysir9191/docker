@@ -1,0 +1,23 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (]8;;file://kali/usr/lib/systemd/system/docker.service\/usr/lib/systemd/system/docker.service]8;;\; [0;1;38:5:185mdisabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Tue 2025-03-11 16:27:36 IST; 2s ago
+ Invocation: 34d2406e94fb42628f31131de1026308
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: ]8;;https://docs.docker.com\https://docs.docker.com]8;;\
+   Main PID: 14139 (dockerd)
+      Tasks: 10
+     Memory: 117.1M (peak: 118.6M)
+        CPU: 669ms
+     CGroup: /system.slice/docker.service
+             └─[0;38;5;245m14139 /usr/sbin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock[0m
+
+Mar 11 16:27:35 kali (dockerd)[14139]: [0;1;38:5:185m[0;1;39m[0;1;38:5:185mdocker.service: Referenced but unset environment variable evaluates to an empty string: DOCKER_OPTS[0m
+Mar 11 16:27:35 kali dockerd[14139]: time="2025-03-11T16:27:35.374079648+05:30" level=info msg="Starting up"
+Mar 11 16:27:35 kali dockerd[14139]: time="2025-03-11T16:27:35.555067586+05:30" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Mar 11 16:27:35 kali dockerd[14139]: time="2025-03-11T16:27:35.647148238+05:30" level=info msg="Loading containers: start."
+Mar 11 16:27:36 kali dockerd[14139]: time="2025-03-11T16:27:36.204207594+05:30" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Mar 11 16:27:36 kali dockerd[14139]: time="2025-03-11T16:27:36.288138920+05:30" level=info msg="Loading containers: done."
+Mar 11 16:27:36 kali dockerd[14139]: time="2025-03-11T16:27:36.338784122+05:30" level=info msg="Docker daemon" commit=411e817 containerd-snapshotter=false storage-driver=overlay2 version=26.1.5+dfsg1
+Mar 11 16:27:36 kali dockerd[14139]: time="2025-03-11T16:27:36.339292552+05:30" level=info msg="Daemon has completed initialization"
+Mar 11 16:27:36 kali dockerd[14139]: time="2025-03-11T16:27:36.393591628+05:30" level=info msg="API listen on /run/docker.sock"
+Mar 11 16:27:36 kali systemd[1]: Started docker.service - Docker Application Container Engine.
